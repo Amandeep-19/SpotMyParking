@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25CAB7D229AE72797CC33D21 /* Pods_SpotMyParking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52E9736D727C770A7E460BF1 /* Pods_SpotMyParking.framework */; };
+		3C0772A32797357F002DC8CB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3C0772A22797357F002DC8CB /* GoogleService-Info.plist */; };
+		3C0772A527975149002DC8CB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0772A427975149002DC8CB /* SignUpViewController.swift */; };
+		3C6B9A2B2795CF7900B8C325 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6B9A2A2795CF7900B8C325 /* AppDelegate.swift */; };
+		3C6B9A2D2795CF7900B8C325 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6B9A2C2795CF7900B8C325 /* SceneDelegate.swift */; };
+		3C6B9A2F2795CF7900B8C325 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6B9A2E2795CF7900B8C325 /* ViewController.swift */; };
+		3C6B9A322795CF7900B8C325 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C6B9A302795CF7900B8C325 /* Main.storyboard */; };
+		3C6B9A342795CF7C00B8C325 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C6B9A332795CF7C00B8C325 /* Assets.xcassets */; };
+		3C6B9A372795CF7C00B8C325 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C6B9A352795CF7C00B8C325 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3C0772A22797357F002DC8CB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3C0772A427975149002DC8CB /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		3C6B9A272795CF7900B8C325 /* SpotMyParking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotMyParking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C6B9A2A2795CF7900B8C325 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3C6B9A2C2795CF7900B8C325 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3C6B9A2E2795CF7900B8C325 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3C6B9A312795CF7900B8C325 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3C6B9A332795CF7C00B8C325 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3C6B9A362795CF7C00B8C325 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3C6B9A382795CF7C00B8C325 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52E9736D727C770A7E460BF1 /* Pods_SpotMyParking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpotMyParking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55679CCBC66F6EA05EC59DC5 /* Pods-SpotMyParking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotMyParking.debug.xcconfig"; path = "Target Support Files/Pods-SpotMyParking/Pods-SpotMyParking.debug.xcconfig"; sourceTree = "<group>"; };
+		73C1756676A0EEAA0806A318 /* Pods-SpotMyParking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotMyParking.release.xcconfig"; path = "Target Support Files/Pods-SpotMyParking/Pods-SpotMyParking.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C6B9A242795CF7900B8C325 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25CAB7D229AE72797CC33D21 /* Pods_SpotMyParking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C6B9A1E2795CF7900B8C325 = {
+			isa = PBXGroup;
+			children = (
+				3C6B9A292795CF7900B8C325 /* SpotMyParking */,
+				3C6B9A282795CF7900B8C325 /* Products */,
+				D8B2D1E92C97E8E5760A7F1B /* Pods */,
+				66239E91FBC036A0709914BB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3C6B9A282795CF7900B8C325 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C6B9A272795CF7900B8C325 /* SpotMyParking.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C6B9A292795CF7900B8C325 /* SpotMyParking */ = {
+			isa = PBXGroup;
+			children = (
+				3C0772A22797357F002DC8CB /* GoogleService-Info.plist */,
+				3C6B9A2A2795CF7900B8C325 /* AppDelegate.swift */,
+				3C6B9A2C2795CF7900B8C325 /* SceneDelegate.swift */,
+				3C6B9A2E2795CF7900B8C325 /* ViewController.swift */,
+				3C0772A427975149002DC8CB /* SignUpViewController.swift */,
+				3C6B9A302795CF7900B8C325 /* Main.storyboard */,
+				3C6B9A332795CF7C00B8C325 /* Assets.xcassets */,
+				3C6B9A352795CF7C00B8C325 /* LaunchScreen.storyboard */,
+				3C6B9A382795CF7C00B8C325 /* Info.plist */,
+			);
+			path = SpotMyParking;
+			sourceTree = "<group>";
+		};
+		66239E91FBC036A0709914BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52E9736D727C770A7E460BF1 /* Pods_SpotMyParking.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8B2D1E92C97E8E5760A7F1B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55679CCBC66F6EA05EC59DC5 /* Pods-SpotMyParking.debug.xcconfig */,
+				73C1756676A0EEAA0806A318 /* Pods-SpotMyParking.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C6B9A262795CF7900B8C325 /* SpotMyParking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C6B9A3B2795CF7C00B8C325 /* Build configuration list for PBXNativeTarget "SpotMyParking" */;
+			buildPhases = (
+				212E7652AFB12DC42C7EF0BF /* [CP] Check Pods Manifest.lock */,
+				3C6B9A232795CF7900B8C325 /* Sources */,
+				3C6B9A242795CF7900B8C325 /* Frameworks */,
+				3C6B9A252795CF7900B8C325 /* Resources */,
+				6CA910206339D65E77A73EC1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpotMyParking;
+			productName = SpotMyParking;
+			productReference = 3C6B9A272795CF7900B8C325 /* SpotMyParking.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C6B9A1F2795CF7900B8C325 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					3C6B9A262795CF7900B8C325 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 3C6B9A222795CF7900B8C325 /* Build configuration list for PBXProject "SpotMyParking" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3C6B9A1E2795CF7900B8C325;
+			productRefGroup = 3C6B9A282795CF7900B8C325 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C6B9A262795CF7900B8C325 /* SpotMyParking */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C6B9A252795CF7900B8C325 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C6B9A372795CF7C00B8C325 /* LaunchScreen.storyboard in Resources */,
+				3C0772A32797357F002DC8CB /* GoogleService-Info.plist in Resources */,
+				3C6B9A342795CF7C00B8C325 /* Assets.xcassets in Resources */,
+				3C6B9A322795CF7900B8C325 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		212E7652AFB12DC42C7EF0BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpotMyParking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CA910206339D65E77A73EC1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpotMyParking/Pods-SpotMyParking-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpotMyParking/Pods-SpotMyParking-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpotMyParking/Pods-SpotMyParking-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C6B9A232795CF7900B8C325 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C6B9A2F2795CF7900B8C325 /* ViewController.swift in Sources */,
+				3C6B9A2B2795CF7900B8C325 /* AppDelegate.swift in Sources */,
+				3C0772A527975149002DC8CB /* SignUpViewController.swift in Sources */,
+				3C6B9A2D2795CF7900B8C325 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3C6B9A302795CF7900B8C325 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C6B9A312795CF7900B8C325 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3C6B9A352795CF7C00B8C325 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C6B9A362795CF7C00B8C325 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3C6B9A392795CF7C00B8C325 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3C6B9A3A2795CF7C00B8C325 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C6B9A3C2795CF7C00B8C325 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55679CCBC66F6EA05EC59DC5 /* Pods-SpotMyParking.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpotMyParking/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Aman.SpotMyParking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3C6B9A3D2795CF7C00B8C325 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73C1756676A0EEAA0806A318 /* Pods-SpotMyParking.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpotMyParking/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Aman.SpotMyParking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C6B9A222795CF7900B8C325 /* Build configuration list for PBXProject "SpotMyParking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C6B9A392795CF7C00B8C325 /* Debug */,
+				3C6B9A3A2795CF7C00B8C325 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C6B9A3B2795CF7C00B8C325 /* Build configuration list for PBXNativeTarget "SpotMyParking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C6B9A3C2795CF7C00B8C325 /* Debug */,
+				3C6B9A3D2795CF7C00B8C325 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C6B9A1F2795CF7900B8C325 /* Project object */;
+}
