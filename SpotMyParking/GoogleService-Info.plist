@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>435711711985-bnqcd82etrkjl2s7in09sallp00q80dl.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.435711711985-bnqcd82etrkjl2s7in09sallp00q80dl</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCoVyrSL_f9ssfLsreIZ4vaaNuOY2X-clk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>435711711985</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Aman.SpotMyParking</string>
+	<key>PROJECT_ID</key>
+	<string>spotmyparking-c641b</string>
+	<key>STORAGE_BUCKET</key>
+	<string>spotmyparking-c641b.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:435711711985:ios:9cb3d8fece08d0cdc06750</string>
+</dict>
+</plist>
