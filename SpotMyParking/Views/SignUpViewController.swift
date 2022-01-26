@@ -28,6 +28,7 @@ class SignUpViewController: UIViewController {
     var txtCarPlateNo = MDCOutlinedTextField();
     var myButton = MDCButton();
     
+    
     var nInitYPos = 180
     var nyPosDiff = 38
     let LRPadding:Int = 40

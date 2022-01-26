@@ -16,17 +16,20 @@ class MapViewController: UIViewController {
     private var userAnnotation = MKPointAnnotation()
     private var parkingCoordinate = CLLocationCoordinate2D()
     private var errorFlag = false
-    
+    var data:NSMutableDictionary = [:]
     var parking:Parking?
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("MAP VIEW")
+        print(parking?.coordinate)
+        print(data["latitude"] as! String)
 
         if let parking = parking {
-            self.parkingCoordinate = parking.coordinate
+//            self.parkingCoordinate = data["latitude"] as! CLLocationCoordinate2D + "," + data["longitude"] as! CLLocationCoordinate2D
         }
         
-//        self.mapView.delegate = self
-//        self.locationController.delegate = self
+        self.mapView.delegate = self
+        self.locationController.delegate = self
         self.locationController.requestLocationAccess(requireContinuousUpdate: true)
         
         let parkingAnnotation = MKPointAnnotation()

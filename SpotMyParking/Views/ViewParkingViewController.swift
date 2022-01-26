@@ -89,4 +89,21 @@ class ViewParkingViewController: UIViewController ,UITableViewDelegate,UITableVi
         cell.addressLabel.text! = self.arrStreetAddress[indexPath.row]
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let myIndex = indexPath.row
+        let data:NSMutableDictionary = [:];
+        data["ParkingOn"]       = self.arrParkingDate[myIndex]
+        data["buildingCode"]    = self.arrBuildingCode[myIndex]
+        data["carPlateNumber"]  = self.arrCarPlateNum[myIndex]
+        data["latitude"]        = self.arrLatitude[myIndex]
+        data["longitude"]       = self.arrLongitude[myIndex]
+        data["parkingHours"]    = self.arrParkingHours[myIndex]
+        data["streetAddress"]   = self.arrStreetAddress[myIndex]
+        data["suitNumber"]      = self.arrSuitNumber[myIndex]
+        
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "parkingDetail") as? DetailParkingViewController
+        vc?.data = data
+        self.navigationController?.pushViewController(vc!, animated: true)
+    }
 }

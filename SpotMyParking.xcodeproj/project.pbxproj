@@ -20,6 +20,7 @@
 		3C92134227A0729600DC3049 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C92134127A0729600DC3049 /* Constants.swift */; };
 		3C92134427A09CF400DC3049 /* ViewParkingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C92134327A09CF400DC3049 /* ViewParkingTableViewCell.swift */; };
 		3C92134627A0A39800DC3049 /* ViewParkingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C92134527A0A39800DC3049 /* ViewParkingController.swift */; };
+		3C92134827A1A13D00DC3049 /* DetailParkingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C92134727A1A13D00DC3049 /* DetailParkingViewController.swift */; };
 		3C99A80F279F16C400E1EC03 /* MainTabBar_Contoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C99A80E279F16C400E1EC03 /* MainTabBar_Contoller.swift */; };
 		3C99A811279F460600E1EC03 /* ViewParkingNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C99A810279F460600E1EC03 /* ViewParkingNavigationController.swift */; };
 		3C99A813279F461F00E1EC03 /* AddParkingNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C99A812279F461F00E1EC03 /* AddParkingNavigationController.swift */; };
@@ -47,6 +48,7 @@
 		3C92134127A0729600DC3049 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3C92134327A09CF400DC3049 /* ViewParkingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewParkingTableViewCell.swift; sourceTree = "<group>"; };
 		3C92134527A0A39800DC3049 /* ViewParkingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewParkingController.swift; sourceTree = "<group>"; };
+		3C92134727A1A13D00DC3049 /* DetailParkingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailParkingViewController.swift; sourceTree = "<group>"; };
 		3C99A80E279F16C400E1EC03 /* MainTabBar_Contoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar_Contoller.swift; sourceTree = "<group>"; };
 		3C99A810279F460600E1EC03 /* ViewParkingNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewParkingNavigationController.swift; sourceTree = "<group>"; };
 		3C99A812279F461F00E1EC03 /* AddParkingNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddParkingNavigationController.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				3C99A81A279F4BFE00E1EC03 /* ProfileViewController.swift */,
 				3C99A82327A0523300E1EC03 /* MapViewController.swift */,
 				3C92134327A09CF400DC3049 /* ViewParkingTableViewCell.swift */,
+				3C92134727A1A13D00DC3049 /* DetailParkingViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				3C99A80F279F16C400E1EC03 /* MainTabBar_Contoller.swift in Sources */,
 				3C92134627A0A39800DC3049 /* ViewParkingController.swift in Sources */,
 				3C92134427A09CF400DC3049 /* ViewParkingTableViewCell.swift in Sources */,
+				3C92134827A1A13D00DC3049 /* DetailParkingViewController.swift in Sources */,
 				3C6B9A2D2795CF7900B8C325 /* SceneDelegate.swift in Sources */,
 				3C92134027A05B6700DC3049 /* LocationController.swift in Sources */,
 				3C99A82427A0523300E1EC03 /* MapViewController.swift in Sources */,

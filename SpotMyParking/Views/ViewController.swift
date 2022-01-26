@@ -70,15 +70,15 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        txtEmail.text = "amandeep.bhavra@gmail.com"
-        txtPassword.text = "12345678"
+        txtEmail.text = ""
+        txtPassword.text = ""
         btnSignUp.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .heavy)
         if UserDefaults.standard.bool(forKey: "DoRemember") {
             switchRememberMe.isOn = true
             doRemember = true
             
-//            emailEntered = UserDefaults.standard.string(forKey: "UserName")!
-//            passwordEntered = UserDefaults.standard.string(forKey: "Password")!
+            txtEmail.text = UserDefaults.standard.string(forKey: "UserName")!
+            txtPassword.text = UserDefaults.standard.string(forKey: "Password")!
             
             emailEntered = txtEmail.text!
             passwordEntered = txtPassword.text!
@@ -145,9 +145,6 @@ class ViewController: UIViewController {
     @IBAction func loginPressed(_ sender: Any) {
         fnLogin()
         print("LOGIN PRESSED")
-//        let vc = UIStoryboard(name: "Main",bundle: nil)
-//        let controller = vc.instantiateViewController(withIdentifier: "signUp")as!SignUpViewController
-//        self.present(controller,animated: true,completion: nil)
     }
     
     func fnLogin() {
