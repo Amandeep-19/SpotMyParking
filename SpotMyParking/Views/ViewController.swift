@@ -53,14 +53,14 @@ class ViewController: UIViewController {
         
 //        lblRememberMe.font = UIFont.init(name: (Constants.FontFamily), size: Constants.FontSize + 1);
         lblRememberMe.frame.origin.x = CGFloat(LRPadding);
-        lblRememberMe.frame.origin.y = CGFloat(nInitYPos + (nyPosDiff * 2) + 25);
+        lblRememberMe.frame.origin.y = CGFloat(nInitYPos + (nyPosDiff * 4) + 20);
         
         btnForgotPassword.frame.origin.x = lblRememberMe.frame.origin.x + lblRememberMe.frame.width + 70
         btnForgotPassword.frame.origin.y = lblRememberMe.frame.origin.y
         
         let nSwitchXPos = Int(lblRememberMe.frame.origin.x) + Int(lblRememberMe.frame.width)
         switchRememberMe.frame.origin.x = CGFloat(nSwitchXPos)
-        switchRememberMe.frame.origin.y = CGFloat(nInitYPos + (nyPosDiff * 2) + 20);
+        switchRememberMe.frame.origin.y = CGFloat(nInitYPos + (nyPosDiff * 4) + 20);
         switchRememberMe.transform = CGAffineTransform(scaleX: 0.75, y: 0.75)
     
         let yPosBottomText = myButton.frame.origin.y + myButton.frame.height + 30
@@ -70,8 +70,8 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        txtEmail.text = ""
-        txtPassword.text = ""
+        txtEmail.text = "amandeep.bhavra@gmail.com"
+        txtPassword.text = "12345678"
         btnSignUp.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .heavy)
         if UserDefaults.standard.bool(forKey: "DoRemember") {
             switchRememberMe.isOn = true
@@ -80,8 +80,8 @@ class ViewController: UIViewController {
 //            emailEntered = UserDefaults.standard.string(forKey: "UserName")!
 //            passwordEntered = UserDefaults.standard.string(forKey: "Password")!
             
-            txtEmail.text = emailEntered
-            txtPassword.text = passwordEntered
+            emailEntered = txtEmail.text!
+            passwordEntered = txtPassword.text!
             
             fnLogin();
         } else {
@@ -143,17 +143,17 @@ class ViewController: UIViewController {
     }
     
     @IBAction func loginPressed(_ sender: Any) {
-       // fnLogin()
+        fnLogin()
         print("LOGIN PRESSED")
-        let vc = UIStoryboard(name: "Main",bundle: nil)
-        let controller = vc.instantiateViewController(withIdentifier: "signUp")as!SignUpViewController
-        self.present(controller,animated: true,completion: nil)
+//        let vc = UIStoryboard(name: "Main",bundle: nil)
+//        let controller = vc.instantiateViewController(withIdentifier: "signUp")as!SignUpViewController
+//        self.present(controller,animated: true,completion: nil)
     }
     
     func fnLogin() {
         if (UserDefaults.standard.bool(forKey: "DoRemember") == false) {
-          var emailEntered = txtEmail.text!
-           var passwordEntered = txtPassword.text!
+            emailEntered = txtEmail.text!
+            passwordEntered = txtPassword.text!
         }
 
         if (emailEntered.isEmpty && passwordEntered.isEmpty) {
@@ -173,8 +173,8 @@ class ViewController: UIViewController {
             if let authResult = authResult {
                 let user = authResult.user
                 if user.isEmailVerified {
-//                    Constants.CurrentUserPassword = strongSelf.passwordEntered
-//                    strongSelf.fnNavigateFurther(email: strongSelf.emailEntered)
+                    Constants.CurrentUserEmail = strongSelf.emailEntered
+                    strongSelf.fnNavigateFurther(email: strongSelf.emailEntered)
 
                     if strongSelf.doRemember {
                         UserDefaults.standard.set(true, forKey: "DoRemember");
@@ -196,6 +196,45 @@ class ViewController: UIViewController {
                 return
             }
         }
+    }
+    
+   
+    @IBAction func btnCreateAccount(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "signUp") as! SignUpViewController
+        vc.modalPresentationStyle = .fullScreen //or .overFullScreen for transparency
+        self.navigationController?.pushViewController(vc, animated: true)
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    func fnNavigateFurther(email: String) {
+        let colName = "parkingSpot/users/" + email
+        db.collection(colName).getDocuments() { [self] (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                if(querySnapshot!.count == 0) {
+                    print("Error getting documents from parkingSpot collection -> \(err)")
+                    return
+                } else{
+                    for result in querySnapshot!.documents {
+                        let row = result.data()
+                        if (row["Email"] as? String) == email {
+                            self.gotoHome();
+                            return;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    func gotoHome () {
+        guard let move = self.storyboard?.instantiateViewController(identifier: "mainTabBarController") as? MainTabBar_Controller else {
+        print("Cannot find Tab Bar Controller!")
+        return
+        }
+        move.modalPresentationStyle = .fullScreen
+        move.emailAddress = emailEntered
+        self.show(move, sender: self)
     }
     func fnShowAlert(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)

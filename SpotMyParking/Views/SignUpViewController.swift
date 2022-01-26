@@ -182,9 +182,9 @@ class SignUpViewController: UIViewController {
     @IBAction func btnSignUp(_ sender: Any) {
         let email = txtEmail.text!
         let password = txtPassword.text!
-        if (!validateFields()) {
+        /*if (!validateFields()) {
             return;
-        }
+        }*/
         //  add it to firebase
 
             userSignUp = [
@@ -230,7 +230,7 @@ class SignUpViewController: UIViewController {
     
     func fnSaveUserData () {
         let coll = "parkingSpot/users/" + txtEmail.text!;
-        self.db.collection(coll).document().setData(self.userSignUp as! [String : Any]) { (error) in
+        self.db.collection(coll).document("details").setData(self.userSignUp as! [String : Any]) { (error) in
             if let err = error {
                 print("Error when saving document -> \(err)");
                 return
